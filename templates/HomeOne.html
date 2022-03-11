@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+
+
+	<!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+	
+</head>
+<script type="text/javascript">
+
+function val()
+{
+if(frm.phone.value=="")
+{
+	alert("Please Enter the Mobile Number");
+	frm.phone.focus();
+	return false;
+	
+}
+if(isNaN(frm.phone.value))
+{
+	alert("Invalid Mobile Number");
+	frm.phone.focus();
+	return false;
+}
+if((frm.phone.value).length<10)
+{
+	
+	alert("Mobile Number should minimum 10 digits");
+	frm.phone.focus();
+	return false;
+}
+
+return true;
+}
+</script>
+<body>
+	
+
+<!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">FLIGHT PRICE PREDICTION SYSTEM</a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+<br/>
+<br/>
+<h1 align="center"> !!Welcome to Flight Prection System!! </h1>
+<br/>
+<form name="frm" method="get" action="/sign">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h2 align="center">Mobile Number:  <input type="Text" name="phone" placeholder="Enter Phone Number"/><h2/>
+<br/>
+<br/>
+<h2 align="center"><input type="submit" value="submit" onclick="return val();"/>
+<input type="reset" value="Reset"/></h2>
+
+
+</form>
+</body>
+</html>
